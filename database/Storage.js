@@ -1,10 +1,6 @@
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default class Storage {
-
-    #Storage() { }
-    static #instance = new Storage();
-    static getInstance() { return this.#instance; }
     
     async save(key, value) {
         await AsyncStorage.setItem(key.toString(), JSON.stringify(value));
