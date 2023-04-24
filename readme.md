@@ -14,7 +14,7 @@
 ## 🔰 Sobre o Projeto
 
 Esse projeto foi criado para demonstrar a utilização do expo-location, para exibir um mapa e o trajeto pelo mapa, guardando o histórico de coordenadas do usuário em uma página separada.
-O input de coordenadas, durante o desenvolvimento, foi feito pela aba "location" nas configurações extendidas do Emulador Android.
+O input de coordenadas, durante o desenvolvimento, foi feito pela aba "location" nas configurações estendidas do Emulador Android.
 
 
 <br/>
