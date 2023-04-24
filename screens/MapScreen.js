@@ -8,7 +8,7 @@ const storage = new Storage();
 
 let foregroundSubscription = null;
 
-export default function MapScreen({ navigation }) {
+export default MapScreen = ({ navigation }) => {
     const [trace, setTrace] = useState([])
     const [position, setPosition] = useState(null)
     const [intervalId, setIntervalId] = useState(null);
@@ -101,12 +101,18 @@ export default function MapScreen({ navigation }) {
                         lineDashPattern={[1]}
                     />}
             </MapView>
-            <Button
-                onPress={() => handleFlagUpdatePosition()}
-                title={flagUpdatePosition ? "Parar rastreamento" : "Iniciar rastreamento"}
-                color={flagUpdatePosition ? "red" : "green"}
-            />
-            
+            <View style={styles.buttonsContainer}>
+                <Button
+                    onPress={() => handleFlagUpdatePosition()}
+                    title={flagUpdatePosition ? "Stop Tracking" : "Start Tracking"}
+                    color={flagUpdatePosition ? "red" : "green"}
+                />
+                <Button
+                    onPress={() => navigation.navigate('ListScreen')}
+                    title="Tracking History"
+                    color="dodgerblue"
+                />
+            </View>
         </View>
     )
 
@@ -119,5 +125,13 @@ const styles = StyleSheet.create({
     map: {
         alignSelf: 'stretch',
         height: '80%'
+    },
+    buttonsContainer: {
+        width: '100%',
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 10
     }
 })
