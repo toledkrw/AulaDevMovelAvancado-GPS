@@ -29,6 +29,7 @@ O input de coordenadas, durante o desenvolvimento, foi feito pela aba "location"
 
 [![JavaScript][javascript]][javascript-url]
 [![Node.js][node.js]][node-url]
+[![ReactNAtive][reactnative]][reactnative-url]
 
 ## 📋 Pré-requisitos
 
@@ -111,6 +112,11 @@ Distribuído sob a MIT License. Veja `LICENSE` para mais informações.
 [npm-url]: https://www.npmjs.com/
 [npm-version]: https://shields.io/badge/yarn->=7.20-%23000000?logo=npm&style=for-the-badge&logoColor=white
 [npm-installation]: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+<!-- BADGE - ReactNative -->
+
+[reactnative]: https://img.shields.io/badge/React_Native-03dffc?logo=react&logoColor=black&style=for-the-badge
+[reactnative-url]: https://reactnative.dev/
 
 <!-- BADGE - VS Code -->
 
